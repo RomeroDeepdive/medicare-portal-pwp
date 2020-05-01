@@ -51,5 +51,12 @@
 	<body>
 </div>
 </section>
+
+<section class="wireframes-features">
+	<div class="Wireframes">
+		<h2>Wireframes</h2>
+<li>Workin ong wireframe in mockflow</li>
+	</div>
+</section>
 </body>
 </html>
