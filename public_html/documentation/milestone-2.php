@@ -13,19 +13,24 @@
 <section class="Welcome-Context">
 <div class="Welcome">
 	<h2>Welcome:</h2>
-
+<section class="Header-context">
+	<div class="Header">
+		<strong>Header Content</strong>
 		<li>This will be my background context (Sandia Mountain img).</li>
 		<li>My personal Logo</li>
-		<li>Drop down feature</li>
-		<li>Links lead to other area's of my page</li>
+		<li>Drop down feature, multiple links to resources on the page.</li>
+		<li>Welcome to Romero Finacial Service's LLC.</li>
+	</div>
+</section>
 	<br>
+
 	<section class="About-Me"
 	 <div class="Personal-About-me">
 	<h2>About me:</h2>
 
 	<li>This section will detail my HealthCare Experience (13 years), introduce myself as
 	an Independent insurance agent.</li>
-	<li>The current companies that I am representing/contracted with in NM.</li>
+	<li>The current companies that I am appointed/contracted with in NM.</li>
 	<li>Detail of experience of past experience and serving my community.</li>
 	<li>I would like to give details about who I am, what I enjoy doing with my free time</li>
 	<li>I'd like to have some interactive photos come in and out about me.</li>
@@ -34,7 +39,26 @@
 </div>
 </section>
 
-<section class="Portfolio-"
+<section class="Why-go-through-broker">
+<div class="Why-me">
+	<h2>Why go through an Independent Broker:</h2>
+	<li> Independent Brokers are at no cost to a potential/existing medicare member</li>
+	<li>Independent Brokers are reimbursed from the carrier they represent. As I mentioned I am representing multiple</li>
+	<li>Why go use me as an Independent Broker?</li>
+</div>
+</section>
+
+<section class="Different types of medicare">
+	<div class="Medicare-options">
+		<li>This section will have card tables, diving comparisons to different medicare options</li>
+		<li> Medicare A, medicare, B, Medicare C, MEdicare Dual plans (medicare and medicaid)
+			Medicare D, Supplmental and Standard MEdicare</li>
+		<li>You are automatically put onto Medicare pt A once 65 or on disability benefits for 2 years.</li>
+		<li>You have an option to select part B</li>
+	</div>
+</section>
+
+<section class="Contact-me"
 <br>
 <section class="Contact-me">
 <div class="contact-form-container">
@@ -52,10 +76,11 @@
 </div>
 </section>
 
+
 <section class="wireframes-features">
 	<div class="Wireframes">
 		<h2>Wireframes</h2>
-<li>Workin ong wireframe in mockflow</li>
+<li>Working on wireframe in mockflow</li>
 	</div>
 </section>
 </body>
