@@ -52,7 +52,7 @@
 	<div class="Medicare-options">
 		<li>This section will have card tables, diving comparisons to different medicare options</li>
 		<li> Medicare A, medicare, B, Medicare C, MEdicare Dual plans (medicare and medicaid)
-			Medicare D, Supplmental and Standard MEdicare</li>
+			Medicare D, Supplmental and Standard Medicare</li>
 		<li>You are automatically put onto Medicare pt A once 65 or on disability benefits for 2 years.</li>
 		<li>You have an option to select part B</li>
 	</div>
