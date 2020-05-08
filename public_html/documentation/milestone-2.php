@@ -81,6 +81,8 @@
 	<div class="Wireframes">
 		<h2>Wireframes</h2>
 <li>Working on wireframe in mockflow</li>
+		<img src="mobile%20wireframe.png">
+		<img src="desktop%20wireframe.png">
 	</div>
 </section>
 </body>
