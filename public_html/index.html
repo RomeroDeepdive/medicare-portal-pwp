@@ -43,22 +43,37 @@
 </section>
 <br>
 
-<section class="About-ME">
-<div class="card" style="width: 18rem;">
-	<img src="about%20me%20photo.jpg" class="card-img-top" alt="John Romero-Sandia Mountains">
+<!--This is the about me section,image and text. Horizontal Card from bootstrap-->
+
+<section class="About-Me">
+<div class="card bg-info mb-3" style="max-width: 540px;">
+	<div class="row no-gutters">
+	<div class="col-md-4">
+	<img src="about%20me%20photo.jpg" class="card-img" alt="John Romero-Sandia Mountains">
+	</div>
+	<div class="col-md-8">
 	<div class="card-body">
-		<p class="card-text-right">My Name is John Romero and I was born and raised right here in Albuquerque. I have been in the
+		<h5 class="card-title">About John</h5>
+		<p class="card-text">My Name is John Romero and I was born and raised right here in Albuquerque. I have been in the
 			Healthcare field for 13 years now. I strive to educate my fellow New Mexican's as much as I can about their
 			healthcare and the options that are available to them. It is not my job to tell you which plan I think is best but
 		to help you make a decision, that you think is best for your health for now and the future.</p>
+	</div>
 	</div>
 </div>
 </section>
 
 <section class="Medicare-Basics">
 	<div class="Medicare details">
+		<div class="bg-light"
+		<h2>Medicare and <b>your</b> Options</h2>
+		<br>
 		<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-			Turning 65?
+			Just turning 65?
+		</button>
+
+		<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+			Veteran (VA Benefits)
 		</button>
 
 		<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
@@ -74,16 +89,76 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 		</button>
 
 		<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-			How do I qualify?
+			How do I qualify
+		</button>
+		<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+			What are all my options
 		</button>
 	</div>
 </section>
 
+		<section class="Contact-Me-Form">
+			<div class="Contact Forms">
+				<b class="container m-5">Contact Me:</b>
+				<form>
+					<div class="form-group row">
+						<label for="inputEmail3" class="col-sm-2 col-form-label">Your Email</label>
+						<div class="col-sm-5">
+							<input type="email" class="form-control" id="inputEmail3">
+						</div>
+					</div>
 
+					<div class="form-group">
+						<label for="inputadditionalquestions" class="col-sm-2 col-form-label">Additional Questions or Concerns</label>
+						<div class="col-md-10">
+							<input type="questions" class="form-control" id="inputadditionalquestions">
+						</div>
+					</div>
 
-
-
-
+					<fieldset class="form-group">
+						<div class="row">
+							<legend class="col-form-label col-sm-2 pt-0">What would you like to speak about:</legend>
+							<div class="col-sm-10">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+									<label class="form-check-label" for="gridRadios1">
+										First radio
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Second radio
+									</label>
+								</div>
+								<div class="form-check disabled">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+									<label class="form-check-label" for="gridRadios3">
+										Third disabled radio
+									</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div class="form-group row">
+						<div class="col-sm-2">Checkbox</div>
+						<div class="col-sm-10">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck1">
+								<label class="form-check-label" for="gridCheck1">
+									Example checkbox
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-sm-10">
+							<button type="submit" class="btn btn-primary">Send E-mail</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
 
 
 <script src="style.css"></script>
