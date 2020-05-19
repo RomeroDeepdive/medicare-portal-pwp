@@ -15,6 +15,7 @@
 <section class="header-title">
 <div class="container-fluid">
 <p class="text-center text-light bg-primary p-6">Romero Financial Service's</p>
+	<img src="romerologo.jpg">
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,7 +51,7 @@
 <div class="card bg-info mb-3" style="max-width: 540px;">
 	<div class="row no-gutters">
 	<div class="col-md-4">
-	<img src="about%20me%20photo.jpg" class="card-img" alt="John Romero-Sandia Mountains">git st
+	<img src="aboutMePhoto.jpg" class="card-img" alt="John Romero-Sandia Mountains">
 	</div>
 	<div class="col-md-8">
 	<div class="card-body">
@@ -64,6 +65,7 @@
 </div>
 </section>
 
+<!------------------------------------------------Accordian Buttons-------------------------------------------->
 <div class="container">
 <section class="Medicare-Basics" id="accordion">
 	<div class="Medicare details" id="Basics">
@@ -71,53 +73,53 @@
 		<h2>Medicare and <b>your</b> Options</h2>
 		<br>
 
-			<!--Just turning 65? first button-->
+			<!-------------------------------------------Just turning 65? first button---------------------------------->
 		<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#turning65" aria-expanded="false" aria-controls="turning65">
 			Just turning 65?
 		</button>
 <div id="turning65" class="collapse">
 	<div class="card card-body">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</div> </div>
 
-			<!--Veterans benefits. Second Button-->
+			<!--------------------------------------------Veterans benefits. Second Button------------------------------->
 			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#veteran" aria-expanded="false" aria-controls="veteran">
 				Go to the VA and on Medicare
 			</button>
 			<div id="veteran" class="collapse">
 				<div class="card card-body">"Although the VA may be your main carrier, take advantage of the medicare benefits."</div> </div>
 
-			<!--Disability benefits, third button-->
+			<!--------------------------------------------Disability benefits, third button--------------------------->
 			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#disability" aria-expanded="false" aria-controls="disability">
 			On Medicare due to disability?
 			</button>
 			<div id="disability" class="collapse">
 				<div class="card card-body">"Although the VA may be your main carrier, take advantage of the medicare benefits."</div> </div>
 
-			<!--Medicaid benefits, 4th button-->
+			<!---------------------------------------------Medicaid benefits, 4th button------------------------------>
 			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#medicaid" aria-expanded="false" aria-controls="medicaid">
 				Have Medicaid and Medicare?
 			</button>
 			<div id="medicaid" class="collapse">
 				<div class="card card-body">"Did you know there are seperate plans with even more benefits for people on Medicaid and Medicare"</div> </div>
 
-			<!--Dental coverage. 5th button-->
+			<!---------------------------------------------Dental coverage. 5th button------------------------------->
 			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#dental" aria-expanded="false" aria-controls="dental">
 				Have dental coverage?
 			</button>
 			<div id="dental" class="collapse">
 				<div class="card card-body">"Some plans may offer anywhere from 50-$2,000 in dental coverage."</div> </div>
 
-			<!--Dental coverage. 5th button-->
+			<!--------------------------------------------Health Plans. 6th button----------------------------------->
 			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#plans" aria-expanded="false" aria-controls="plans">
 				What are my options in New Mexico
 			</button>
 			<div id="plans" class="collapse">
 				<div class="card card-body">"As an Independent broker I am able to assist you in finding a plan that you think
-					fits you the best. I represent multiple carriers, such as Presbyterian, BLue Cross BLue Shield of NM, Aetna, United Healthcare"</div> </div>
+					fits you the best. I represent multiple carriers, such as Presbyterian, BLue Cross Blue Shield of NM, Aetna, United Healthcare"</div> </div>
 
 	</div>
 </section>
 </div>
-
+<!------------------------------------------------Contact Form and Radio Buttons-------------------------------->
 		<section class="Contact-Me-Form">
 			<div class="Contact Forms">
 				<b class="container m-5">Contact Me:</b>
@@ -129,49 +131,50 @@
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label for="inputadditionalquestions" class="col-sm-2 col-form-label">Additional Questions or Concerns</label>
-						<div class="col-md-10">
-							<input type="questions" class="form-control" id="inputadditionalquestions">
-						</div>
-					</div>
-
 					<fieldset class="form-group">
 						<div class="row">
 							<legend class="col-form-label col-sm-2 pt-0">What would you like to speak about:</legend>
 							<div class="col-sm-10">
+
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
 									<label class="form-check-label" for="gridRadios1">
-										First radio
+										Dental coverage
 									</label>
 								</div>
+
 								<div class="form-check">
 									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
 									<label class="form-check-label" for="gridRadios2">
-										Second radio
+										Change plan
 									</label>
 								</div>
-								<div class="form-check disabled">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
 									<label class="form-check-label" for="gridRadios3">
-										Third disabled radio
+										Over the Counter benefit (OTC)
 									</label>
 								</div>
-							</div>
-						</div>
-					</fieldset>
-					<div class="form-group row">
-						<div class="col-sm-2">Checkbox</div>
-						<div class="col-sm-10">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="gridCheck1">
-								<label class="form-check-label" for="gridCheck1">
-									Example checkbox
-								</label>
-							</div>
+
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+							<label class="form-check-label" for="gridRadios4">
+							Veteran benefits
+							</label>
 						</div>
 					</div>
+				</div>
+
+			<!--------------------------------------additional questions not in the radio buttons------------------------>
+			<div class="form-group">
+				<label for="inputadditionalquestions" class="col-sm-2 col-form-label">Additional Questions or Concerns</label>
+				<div class="col-md-10">
+					<input type="questions" class="form-control" id="inputadditionalquestions">
+				</div>
+			</div>
+
+			<!-------------------------------------------Send email button--------------------------------------------->
 					<div class="form-group row">
 						<div class="col-sm-10">
 							<button type="submit" class="btn btn-primary">Send E-mail</button>
