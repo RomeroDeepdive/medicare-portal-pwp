@@ -1,0 +1,58 @@
+/****************************
+* Custom CSS
+* author: John Romero
+*****************************/
+@import url (https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+.header-title {
+    font-size:x-large;
+}
+
+
+/****************************
+* NAVBAR
+*****************************/
+.navbar-brand {
+width: auto;
+    height: auto;
+    padding-top: 3px;
+    font-family: "Bookman Old Style";
+}
+/****************************
+* CUSTOM BOOTSTRAP OVERRIDES
+*****************************/
+/****************************
+* ABOUT ME
+*****************************/
+.About-Me {
+    background-color: rgba(39,61,111,0.98)
+    color:black;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em
+}
+/****************************
+* IMAGES
+*****************************/
+.About-Me img {
+    float:left;
+    width: 90;
+    margin-right: 4em;
+}
+h5 {
+    margin: auto;
+    height: auto;
+    padding-left: 90px;
+    display: block;
+    font-size: xx-large;
+
+}
+
+/****************************
+* CONTACT
+*****************************/
+/****************************
+* GLOBAL STYLES--- items that are big changes. change multiple things.
+*****************************/
+/****************************
+* FOOTER
+*****************************/
