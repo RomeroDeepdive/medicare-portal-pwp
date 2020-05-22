@@ -9,15 +9,15 @@ $(document).ready(function() {
 		//each rule starts with the form input elements NAME attribute
 		rules: {
 			name: {
-				required:true
+				required: true
 			},
 			email: {
 				email: true,
 				required: true
 			},
 			message: {
-				require: true,
-				maxLength:2000
+				required: true,
+				maxlength: 2000
 			}
 		},
 		//error message to display to the end user when rules above don't pass
@@ -45,7 +45,7 @@ $(document).ready(function() {
 					$("#output-area").html(ajaxOutput)
 
 					//reset the form if it was successful
-					if($(",alert-success").length>=1 ) {
+					if($(".alert-success").length>=1 ) {
 						$("contact")[0].reset();
 					}
 
