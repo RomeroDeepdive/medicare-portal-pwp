@@ -46,6 +46,11 @@ h5 {
     font-size: xx-large;
 
 }
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 180px!important;
+}
 
 /****************************
 * CONTACT
