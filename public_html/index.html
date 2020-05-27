@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" type="text/css" />
-
+	<script src="https://kit.fontawesome.com/5f51221a97.js" crossorigin="anonymous"></script>
 	<title>Romero Financial Service's</title>
 
 </head>
@@ -130,33 +130,77 @@
 </section>
 </div>
 <!------------------------------------------------Contact Form and Radio Buttons-------------------------------->
-		<section class="Contact" class="py-10">
+		<section id="contact" class="py-10">
 			<div class="Container">
 				<div class="row">
 					<div class="col-md-7 offset-md-3">
 						<div class="border p-5">
-				<h2 class="text-center mb-5">Contact Me:</h2>
+				<h2 class="text-center mb-5">Contact Me Today:</h2>
 							<form action="http://localhost:4200/apis" id="contact" method="post">
 				<form>
-					<div class="form-group row">
+					<!------------------------------NAME contact form Section----------------------->
+					<div class="form-group">
+						<label class="sr-only" for="contactName">
+						"Name"
+						<span class="text-danger">*</span>
+					</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+						<span class="input-group-text">
+								<i class="fas fa-user" aria-hidden="true">
+							</i>
+								</span>
+					</div>
+							<input type="text" class="form-control" id="contactName" name="contactName" placeholder="Name">
+					</div>
+				</div>
+						<!------------------------------Email Contact form Section----------------------->
+						<label class="sr-only" for="contactE-mail">
+							"E-mail"
+							<span class="text-danger">*</span>
+						</label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+						<span class="input-group-text">
+								<i class="fas fa-envelope" aria-hidden="true">
+							</i>
+								</span>
+							</div>
+							<input type="text" class="form-control" id="contactE-mail" name="contactE-mail" placeholder="E-mail">
+							<!------------------------------Phone Number Contact form Section----------------------->
+							<label class="sr-only" for="contactContact">
+								"Phone Number"
+								<span class="text-danger">*</span>
+							</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+						<span class="input-group-text">
+								<i class="fas fa-phone" aria-hidden="true">
+							</i>
+								</span>
+								</div>
+										<input type="text" class="form-control" id="contactContact" name="contactContact" placeholder="Phone Number(optional">
 
-						<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-						<div class="col-md-5-md-3">
-							<input type="email" name="email" class="form-control" id="inputEmail3">
+								<!------------------------------Additional comments/mssage Contact form Section----------------------->
+								<label class="sr-only" for="contactMessage">
+									"Message"
+									<span class="text-danger">*</span>
+								</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+						<span class="input-group-text">
+								<i class="fas fa-comment-alt" aria-hidden="true">
+							</i>
+								</span>
+									</div>
+										<textarea class="form-control" rows="5" id="contactMessage" name="contactMessage" placeholder="Additional Comments (2000 characters max)"></textarea>
 
 
-								<label for="inputName" class="col-sm-2 col-form-label">Name</label>
-								<div class="col-md-5-md-3">
-									<input type="name" name="name" class="form-control" id="inputName">
-
-									<label for="inputPhoneNumber" class="col-sm-2 col-form-label">Phone Number (optional)</label>
-									<div class="col-md-5-md-3">
-										<input type="phone" name="phone" class="form-control" id="inputPhoneNumber">
-
-										<label for="inputadditionalquestions" class="col-sm-2 col-form-label">Message (opional)</label>
-										<div class="col-md-10">
-											<input type="messages" name="message" class="form-control" id="inputadditionalquestions">
-											<button type="submit" class="btn btn-primary">Send E-mail</button>
+										<button type="submit" class="btn btn-primary">
+									<i class="fas fa-paper-plane" aria-hidden="true">
+									</i>
+											Send E-mail
+										</button>
 						</div>
 					</div>
 				</div>
@@ -196,7 +240,11 @@
 						</div>
 					</div>
 				</div>
-
+						<div class="row">
+							<div class="col-xs-12">
+								<div id="output-area"></div>
+						</div>
+						</section>
 			<!--------------------------------------Romero Logo on footer---------------------------------->
 						<section class="romero-logo">
 							<div class="footer logo">
