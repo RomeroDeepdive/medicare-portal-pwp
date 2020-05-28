@@ -2,34 +2,34 @@
 * Custom CSS
 * author: John Romero
 *****************************/
-@import url (https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
-.header-title {
-    font-size:x-large;
-}
 
 
 /****************************
 * NAVBAR
 *****************************/
-.navbar-brand {
-width: auto;
-    height: auto;
-    padding-top: 3px;
-    font-family: "Bookman Old Style";
-}
+
 /****************************
 * CUSTOM BOOTSTRAP OVERRIDES
 *****************************/
+
 /****************************
 * ABOUT ME
 *****************************/
-.About-Me {
-    background-color: rgba(39,61,111,0.98)
-    color:black;
-    padding: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em
-}
+
+
+        /****************************
+    * Medicare Choices
+    *****************************/
+    .btn-secondary {
+   background-image: url("yellowballoon.jpg");
+        border: 1px black;
+    }
+
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+        background-color: crimson;
+        margin: 100px;
+        padding: 200px;
 /****************************
 * IMAGES
 *****************************/
@@ -53,14 +53,13 @@ img {
 }
 
 /****************************
-* CONTACT
+* CONTACT FORM Section
 *****************************/
-.div-border {
-    background-color: red;
-}
-
-
-}
+.div.border.p-5 {
+    padding: 80px!important;
+    width: auto;
+    margin: 80px;
+    background-color: teal;
 /****************************
 * GLOBAL STYLES--- items that are big changes. change multiple things.
 *****************************/

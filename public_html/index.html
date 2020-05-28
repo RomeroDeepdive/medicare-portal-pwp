@@ -5,11 +5,12 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+<script src="style.css"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css" type="text/css" />
+
 	<script src="https://kit.fontawesome.com/5f51221a97.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	<title>Romero Financial Service's</title>
 
 </head>
@@ -58,7 +59,7 @@
 <!-------------------This is the about me section,image and text. Horizontal Card from bootstrap------------------->
 
 <section class="About-Me">
-<div class="card bg-info mb-3" style="max-width: 540px;">
+<div class="card bg-info mb-3">
 	<div class="row no-gutters">
 	<div class="col-md-4">
 	<img src="aboutMePhoto.jpg" class="card-img" alt="John Romero-Sandia Mountains">
@@ -76,7 +77,7 @@
 </section>
 
 <!------------------------------------------------Accordian Buttons-------------------------------------------->
-<div class="container">
+<div class="container-expand-lg">
 <section class="Medicare-Basics" id="accordion">
 	<div class="Medicare details" id="Basics">
 		<div class="bg-light">
@@ -84,42 +85,42 @@
 		<br>
 
 			<!-------------------------------------------Just turning 65? first button---------------------------------->
-		<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#turning65" aria-expanded="false" aria-controls="turning65">
+		<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#turning65" aria-expanded="false" aria-controls="turning65">
 			Just turning 65?
 		</button>
 <div id="turning65" class="collapse">
 	<div class="card card-body">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</div> </div>
 
 			<!--------------------------------------------Veterans benefits. Second Button------------------------------->
-			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#veteran" aria-expanded="false" aria-controls="veteran">
+			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#veteran" aria-expanded="false" aria-controls="veteran">
 				Go to the VA and on Medicare
 			</button>
 			<div id="veteran" class="collapse">
 				<div class="card card-body">"Although the VA may be your main carrier, take advantage of the medicare benefits."</div> </div>
 
 			<!--------------------------------------------Disability benefits, third button--------------------------->
-			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#disability" aria-expanded="false" aria-controls="disability">
+			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#disability" aria-expanded="false" aria-controls="disability">
 			On Medicare due to disability?
 			</button>
 			<div id="disability" class="collapse">
 				<div class="card card-body">"Although the VA may be your main carrier, take advantage of the medicare benefits."</div> </div>
 
 			<!---------------------------------------------Medicaid benefits, 4th button------------------------------>
-			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#medicaid" aria-expanded="false" aria-controls="medicaid">
+			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#medicaid" aria-expanded="false" aria-controls="medicaid">
 				Have Medicaid and Medicare?
 			</button>
 			<div id="medicaid" class="collapse">
 				<div class="card card-body">"Did you know there are seperate plans with even more benefits for people on Medicaid and Medicare"</div> </div>
 
 			<!---------------------------------------------Dental coverage. 5th button------------------------------->
-			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#dental" aria-expanded="false" aria-controls="dental">
+			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#dental" aria-expanded="false" aria-controls="dental">
 				Have dental coverage?
 			</button>
 			<div id="dental" class="collapse">
 				<div class="card card-body">"Some plans may offer anywhere from 50-$2,000 in dental coverage."</div> </div>
 
 			<!--------------------------------------------Health Plans. 6th button----------------------------------->
-			<button type="button" class="btn btn-secondary"  data-toggle="collapse" data-target="#plans" aria-expanded="false" aria-controls="plans">
+			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#plans" aria-expanded="false" aria-controls="plans">
 				What are my options in New Mexico
 			</button>
 			<div id="plans" class="collapse">
@@ -130,7 +131,7 @@
 </section>
 </div>
 <!------------------------------------------------Contact Form and Radio Buttons-------------------------------->
-		<section id="contact" class="py-10">
+		<section id="contact-form" class="py-10">
 			<div class="Container">
 				<div class="row">
 					<div class="col-md-7 offset-md-3">
@@ -181,6 +182,38 @@
 								</div>
 										<input type="text" class="form-control" id="contactContact" name="contactContact" placeholder="Phone Number(optional">
 
+								<fieldset class="form-group">
+									<div class="row">
+										<legend class="col-form-label col-sm-2 pt-0">Additional questions or service's</legend>
+										<div class="col-sm-10">
+
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+												<label class="form-check-label" for="gridRadios1">
+													Dental coverage
+												</label>
+											</div>
+
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+												<label class="form-check-label" for="gridRadios2">
+													Change plan
+												</label>
+											</div>
+
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+												<label class="form-check-label" for="gridRadios3">
+													Over the Counter benefit (OTC)
+												</label>
+											</div>
+
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+												<label class="form-check-label" for="gridRadios4">
+													Veteran benefits
+												</label>
+											</div>
 								<!------------------------------Additional comments/mssage Contact form Section----------------------->
 								<label class="sr-only" for="contactMessage">
 									"Message"
@@ -206,38 +239,6 @@
 				</div>
 					</div>
 				</div>
-					<fieldset class="form-group">
-						<div class="row">
-							<legend class="col-form-label col-sm-2 pt-0">What would you like to speak about:</legend>
-							<div class="col-sm-10">
-
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-									<label class="form-check-label" for="gridRadios1">
-										Dental coverage
-									</label>
-								</div>
-
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-									<label class="form-check-label" for="gridRadios2">
-										Change plan
-									</label>
-								</div>
-
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-									<label class="form-check-label" for="gridRadios3">
-										Over the Counter benefit (OTC)
-									</label>
-								</div>
-
-						<div class="form-check">
-							<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
-							<label class="form-check-label" for="gridRadios4">
-							Veteran benefits
-							</label>
-						</div>
 					</div>
 				</div>
 						<div class="row">
