@@ -2,12 +2,19 @@
 * Custom CSS
 * author: John Romero
 *****************************/
-
+body {
+    background-image: url("nmbackground.jpg");
+background-size: cover;
+}
 
 /****************************
 * NAVBAR
 *****************************/
-
+.bg-light {
+    background-color: #0d2944 !important;
+    font-size: x-large;
+    font-weight: 600;
+}
 /****************************
 * CUSTOM BOOTSTRAP OVERRIDES
 *****************************/
@@ -15,28 +22,26 @@
 /****************************
 * ABOUT ME
 *****************************/
-
-
-        /****************************
-    * Medicare Choices
-    *****************************/
-    .btn-secondary {
-   background-image: url("yellowballoon.jpg");
-        border: 1px black;
-    }
-
-    .container, .container-md, .container-sm {
-        max-width: 720px;
-        background-color: crimson;
-        margin: 100px;
-        padding: 200px;
-/****************************
-* IMAGES
-*****************************/
-.About-Me img {
-    float:left;
-    width: 90;
-    margin-right: 4em;
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    padding: 5px;
+    margin-block-end: auto;
+    font-size: larger;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-family: -webkit-pictograph;
+    font-style: oblique;
+    font-size: x-large;
 }
 h5 {
     margin: auto;
@@ -46,6 +51,42 @@ h5 {
     font-size: xx-large;
 
 }
+
+        /****************************
+    * Medicare Choices
+    *****************************/
+    .btn-secondary {
+   background-image: url("yellowballoon.jpg");
+        border: 1px black;
+    }
+
+.h2, h2 {
+    font-size: 61px;
+    margin: -10px;
+    font-style: oblique;
+    font-family: -webkit-body;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin: 10px;
+}
+/****************************
+* IMAGES
+*****************************/
+.About-Me img {
+    float: left;
+    width: 90;
+    margin-right: 4em;
+    border-style: double;
+    margin: 60px;
+    max-height: 500px
+}
+
+
 img {
     vertical-align: middle;
     border-style: none;
@@ -55,11 +96,40 @@ img {
 /****************************
 * CONTACT FORM Section
 *****************************/
-.div.border.p-5 {
-    padding: 80px!important;
-    width: auto;
-    margin: 80px;
+.p-5 {
+    padding: 15px;
+    margin: 50px;
     background-color: teal;
+    font-family: inherit;
+}
+/****************************
+* send email button
+*************************/
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: black;
+    margin-bottom: 150px;
+    padding: 25px;
+}
+.btn {
+    display: table-row-group;
+    font-weight: 400;
+    color: #212529;
+    text-align: unset;
+    vertical-align: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1.25px 2.50px;
+    margin: 23px;
+    font-size: 1.10rem;
+    line-height: 1.5;
+    border-radius: 2.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 /****************************
 * GLOBAL STYLES--- items that are big changes. change multiple things.
 *****************************/
