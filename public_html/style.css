@@ -12,7 +12,8 @@ background-size: cover;
 *****************************/
 .bg-light {
     background-color: #0d2944 !important;
-    font-size: x-large;
+    font-size: xx-large;
+    max-width: fit-content;
     font-weight: 600;
 }
 /****************************
@@ -65,6 +66,7 @@ h5 {
     margin: -10px;
     font-style: oblique;
     font-family: -webkit-body;
+    text-align: center;
 }
 
 .btn-group-lg>.btn, .btn-lg {
@@ -102,6 +104,24 @@ img {
     background-color: teal;
     font-family: inherit;
 }
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+.col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(1rem + 2px);
+    margin-bottom: -4px;
+    font-size: x-large;
+    line-height: 1.5;
+    font-style: normal;
+    min-inline-size: -webkit-fill-available;
+    font-weight: bold;
+}
+.form-check-label {
+    margin-bottom: 1;
+    font-size: larger;
+    font-weight: 600;
+}
 /****************************
 * send email button
 *************************/
@@ -136,3 +156,18 @@ img {
 /****************************
 * FOOTER
 *****************************/
+.h4, h4 {
+    color: yellow;
+    font-size: xx-large;
+    align-content: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: cornsilk;
+    font-size: x-large;
+    font-weight: 400;
+    font-family: serif;
+    min-inline-size: auto;
+}
