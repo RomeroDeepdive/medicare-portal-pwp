@@ -3,8 +3,9 @@
 * author: John Romero
 *****************************/
 body {
-    background-image: url("nmbackground.jpg");
-background-size: cover;
+    background-image: url(frogballoon.jpg);
+    background-repeat-y: no-repeat;
+    background-size: 65rem;
 }
 
 /****************************
@@ -12,8 +13,8 @@ background-size: cover;
 *****************************/
 .bg-light {
     background-color: #0d2944 !important;
-    font-size: xx-large;
-    max-width: fit-content;
+    font-size: larger;
+    max-width: none;
     font-weight: 600;
 }
 /****************************
