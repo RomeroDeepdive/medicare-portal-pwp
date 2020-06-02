@@ -17,6 +17,18 @@ body {
     max-width: none;
     font-weight: 600;
 }
+.navbar {
+    position: fixed;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
 /****************************
 * CUSTOM BOOTSTRAP OVERRIDES
 *****************************/
@@ -62,6 +74,62 @@ Medicare Basics and information
     max-height: auto;
     padding: 100px;
     margin: auto;
+    margin-bottom: 200px;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: auto;
+    padding-top: 200px;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 300px;
+    bottom: 160px;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: cente;
+    width: 0px;
+    max-height: fit-content;
+    color: lightseagreen;
+    text-align: center;
+    opacity: .30;
+    transition: opacity .20s ease;
+    padding-top: 300px;
+    background-color: navy;
+    font-size: larger;
+    font-weight: 400;
+}
+.carousel-item {
+    position: inherit;
+    display: none;
+    float: none;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    background-color: blue;
+    font-size: xx-large;
 }
 /****************************
     * Medicare Choices
@@ -105,6 +173,9 @@ img {
     width: 180px!important;
 }
 
+.mb-3, .my-3 {
+    margin-bottom: 40rem!important;
+}
 /****************************
 * CONTACT FORM Section
 *****************************/
