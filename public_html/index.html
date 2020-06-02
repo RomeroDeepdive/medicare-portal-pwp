@@ -24,16 +24,16 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-		<a class="navbar-brand" href="#">About Me</a>
+		<a class="navbar-brand" href="index.html#aboutMe">About Me</a>
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Medicare Basics<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="index.html#medicareBasics">Medicare Basics<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Medicare Options</a>
+				<a class="nav-link" href="index.html#medicareOptions">Medicare Options</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact Me</a>
+				<a class="nav-link" href="index.html#contactForm">Contact Me</a>
 			</li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
@@ -67,6 +67,7 @@
 	</div>
 	<div class="col-md-8">
 	<div class="card-body">
+		<h5 id="aboutMe"></h5>
 		<h5 class="card-title">About Me</h5>
 		<p class="card-text">My Name is John Romero and I was born and raised right here in Albuquerque. I have been in the
 			Healthcare field for 13 years now. I strive to educate my fellow New Mexican's as much as I can about their
@@ -76,54 +77,146 @@
 	</div>
 </div>
 </section>
-
-<!------------------------------------------------Accordian Buttons-------------------------------------------->
+<!---------------------------------------Medicare Basics and differences/Carousel Feature---------------------------->
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+		<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		<li data-target="#carouselExampleCaptions" data-slide-to="3"></li
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="New_US_Medicare_Card_Sample_2018.jpg" class="d-block w-100" alt="red white and blue card">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Standard Medicare (Options A, B and D)</h5>
+				<p>There are many different options when first sign up for Medicare. Medicare Part A (Hospital Charges), Medicare Part B (Physician Charges)
+				Medicare Part D...</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="physician.jpg" class="d-block w-100" alt="part c plans details">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Medicare Part C or Medicare Advantage Plans</h5>
+				<p>Medicare Part C or Medicare Advantage plans are some of the most popular options for people these days.Most
+					Plans have a zero cost premium attached to them and are more of a pay as you go type of policy. (ex: copays,
+					prescription deductibles and other percentages</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="medicinecoverage.png" class="d-block w-100" alt="prescription drug coverage">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Medicare Part D(Prescription Drug Coverage)</h5>
+				<p>Medicare Part D or your Prescription drug coverage is something that must be purchased by you (the member)
+					and would work with a Medicare Supplmentl plan or Standard Medicare.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="malephysician.jpg" class="d-block w-100" alt="Supplmental coverge">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Medicare Supplmental plans</h5>
+				<p>I like to remind my members that a Supplmental plan is a pay upfront for your care policy. In other words,
+					you have a premium each month(on top of the $146.00 a month to SSN) but when you go to the Dr. you may not have any
+				out of pocket expenses (ex: No copays, no out of pocket or deductibles) Of course this is all depending on the type of
+				Supplmental plan you purchase.</p>
+			</div>
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<!-----------------------------------------------Card Groups with buttons-------------------------------------------->
 <div class="container-expand-lg">
 <section class="Medicare-Basics" id="accordion">
 	<div class="Medicare details" id="Basics">
 		<div class="bg-light">
-		<h2>Medicare and <b>your</b> Options</h2>
+			<h2 id="medicareOptions"></h2>
+		<h2>Medicare and <b>YOU</b></h2>
 		<br>
-
+		</div>
 			<!-------------------------------------------Just turning 65? first button---------------------------------->
-		<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#turning65" aria-expanded="false" aria-controls="turning65">
+		<div class="row row-cols-1 row-cols-md-2">
+				<div class="col-mb-4">
+					<div class="card">
+					<div class="card-body">
+						<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+					<button type="button" class="btn-secondary btn-md"  data-toggle="collapse" data-target="#turning65" aria-expanded="false" aria-controls="turning65">
 			Just turning 65?
 		</button>
+				</div>
+				</div>
 <div id="turning65" class="collapse">
-	<div class="card card-body">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</div> </div>
+	<div class="card card-body">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</div>
+</div>
 
 			<!--------------------------------------------Veterans benefits. Second Button------------------------------->
-			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#veteran" aria-expanded="false" aria-controls="veteran">
+				<div class="card-one">
+					<div class="col-mb-4">
+						<div class="card-body">
+							<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+							<button type="button" class="btn-secondary btn-md"  data-toggle="collapse" data-target="#veteran" aria-expanded="false" aria-controls="veteran">
 				Go to the VA and on Medicare
 			</button>
+						</div>
+					</div>
 			<div id="veteran" class="collapse">
 				<div class="card card-body">"Although the VA may be your main carrier, take advantage of the medicare benefits."</div> </div>
 
 			<!--------------------------------------------Disability benefits, third button--------------------------->
-			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#disability" aria-expanded="false" aria-controls="disability">
+					<div class="card-two">
+						<div class="col-mb-4">
+							<div class="card-body">
+								<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+								<button type="button" class="btn-secondary btn-md"  data-toggle="collapse" data-target="#disability" aria-expanded="false" aria-controls="disability">
 			On Medicare due to disability?
 			</button>
+							</div>
+						</div>
 			<div id="disability" class="collapse">
 				<div class="card card-body">"Although the VA may be your main carrier, take advantage of the medicare benefits."</div> </div>
 
 			<!---------------------------------------------Medicaid benefits, 4th button------------------------------>
-			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#medicaid" aria-expanded="false" aria-controls="medicaid">
+						<div class="card-three">
+							<div class="col-mb-4">
+								<div class="card-body">
+									<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+									<button type="button" class="btn-secondary btn-md"  data-toggle="collapse" data-target="#medicaid" aria-expanded="false" aria-controls="medicaid">
 				Have Medicaid and Medicare?
 			</button>
+								</div>
+							</div>
 			<div id="medicaid" class="collapse">
 				<div class="card card-body">"Did you know there are seperate plans with even more benefits for people on Medicaid and Medicare"</div> </div>
 
 			<!---------------------------------------------Dental coverage. 5th button------------------------------->
-			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#dental" aria-expanded="false" aria-controls="dental">
+							<div class="card-four">
+								<div class="col-mb-4">
+									<div class="card-body">
+										<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+										<button type="button" class="btn-secondary btn-md"  data-toggle="collapse" data-target="#dental" aria-expanded="false" aria-controls="dental">
 				Have dental coverage?
 			</button>
+									</div>
+								</div>
 			<div id="dental" class="collapse">
 				<div class="card card-body">"Some plans may offer anywhere from 50-$2,000 in dental coverage."</div> </div>
 
 			<!--------------------------------------------Health Plans. 6th button----------------------------------->
-			<button type="button" class="btn-secondary btn-lg"  data-toggle="collapse" data-target="#plans" aria-expanded="false" aria-controls="plans">
+								<div class="card-five">
+									<div class="col-mb-4">
+										<div class="card-body">
+											<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+											<button type="button" class="btn-secondary btn-md"  data-toggle="collapse" data-target="#plans" aria-expanded="false" aria-controls="plans">
 				What are my options in New Mexico
 			</button>
+										</div>
+									</div>
 			<div id="plans" class="collapse">
 				<div class="card card-body">"As an Independent broker I am able to assist you in finding a plan that you think
 					fits you the best. I represent multiple carriers, such as Presbyterian, BLue Cross Blue Shield of NM, Aetna, United Healthcare"</div> </div>
@@ -137,6 +230,7 @@
 				<div class="row">
 					<div class="col-md-7 offset-md-3">
 						<div class="border p-5">
+							<h2 id="contactForm"></h2>
 				<h2 class="text-center mb-5">Contact Me Today:</h2>
 							<form action="http://localhost:4200/apis" id="contact" method="post">
 				<form>

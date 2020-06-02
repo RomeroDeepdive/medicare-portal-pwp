@@ -53,10 +53,19 @@ h5 {
     font-size: xx-large;
 
 }
-
-        /****************************
+/*************************
+Medicare Basics and information
+************************/
+.w-100 {
+    */ width: 100% !important;
+    max-width: 300px;
+    max-height: auto;
+    padding: 100px;
+    margin: auto;
+}
+/****************************
     * Medicare Choices
-    *****************************/
+*****************************/
     .btn-secondary {
    background-image: url("yellowballoon.jpg");
         border: 1px black;
