@@ -1,0 +1,10 @@
+body {
+    background-image: url("whitewoodbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h5, h5 {
+    font-size: 3.25rem;
+    font-family: sans-serif;
+}
