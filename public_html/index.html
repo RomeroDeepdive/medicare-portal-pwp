@@ -19,14 +19,14 @@
 <body>
 
 <!-------------------------------------------NAV Bar Section------------------------------------------------->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
 	        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 		<a class="navbar-brand" href="index.html#aboutMe">
-			<!--			<img src="romerologo.jpg" class="rounded center mb-4">-->
+			<img src="romerologo.jpg%20(2).jpg" class="width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
 		</a>
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			<li class="nav-item active">
@@ -50,8 +50,8 @@
 
 <!-------------------This is the about me section,image and text. Horizontal Card from bootstrap------------------->
 
-<section class="About-Me bg-transparent mb-5 mt-5 pb-5">
-	<div class="container-fluid">
+<section class="About-Me mb-5 mt-5 pb-5">
+	<div class="container-fluid mb-5 mt-5 pb-5 pt-5">
 		<div class="row class="row">
 			<div class="col-md-3 mt-5 mb-5">
 				<img src="aboutMePhoto.jpg" class="card-img" alt="JohnRomero-Sandia Mountains">
@@ -75,7 +75,7 @@
 	</div>
 </section>
 <!---------------------------"------------Medicare Basics and differences/Carousel Feature---------------------------->
-<section class="medicare-Basics mb-5 mt-5 pb-5 bg-primary">
+<section class="medicare-Basics mb-5 mt-5 pb-5">
 <div class="container">
 	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -87,7 +87,7 @@
 			<div class="carousel-item active">
 				<img src="prescription.jpg" class="d-block w-90" alt="picture of dietary pills">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>First slide label</h5>
+					<h5 id="medicareBasics">First slide label</h5>
 					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 		<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 			<div class="card">
 				<div class="card-body">
-					<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+					<img src="holding%20hands.jpg" class="card-img" alt="rioGrande">
 					<button type="button" class="btn-secondary btn-md" data-toggle="collapse" data-target="#turning65"
 					        aria-expanded="false" aria-controls="turning65">
 						Just turning 65?
@@ -155,7 +155,7 @@
 		<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 			<div class="card">
 				<div class="card-body">
-					<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+					<img src="disabled.jpg" class="card-img" alt="rioGrande">
 					<button type="button" class="btn-secondary btn-md" data-toggle="collapse" data-target="#disability"
 					        aria-expanded="false" aria-controls="disability">
 						On Medicare due to Disability?
@@ -169,7 +169,7 @@
 		<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 			<div class="card">
 				<div class="card-body">
-					<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+					<img src="holding%20hands.jpg" class="card-img" alt="rioGrande">
 					<button type="button" class="btn-secondary btn-md" data-toggle="collapse" data-target="#medicaid"
 					        aria-expanded="false" aria-controls="medicaid">
 						Have Medicaid and Medicare?
@@ -183,7 +183,7 @@
 		<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 			<div class="card">
 				<div class="card-body">
-					<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+					<img src="dental.jpg" class="card-img" alt="rioGrande">
 					<button type="button" class="btn-secondary btn-md" data-toggle="collapse" data-target="#dental"
 					        aria-expanded="false" aria-controls="dental">
 						Need Dental coverage?
@@ -197,7 +197,7 @@
 		<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 			<div class="card">
 				<div class="card-body">
-					<img src="riogrande%20sandbarl.jpg" class="card-img" alt="rioGrande">
+					<img src="otc.jpg" class="card-img" alt="rioGrande">
 					<button type="button" class="btn-secondary btn-md" data-toggle="collapse" data-target="#otcbenefit"
 					        aria-expanded="false" aria-controls="otcbenefit">
 						Over the counter (OTC) benefits?
@@ -266,6 +266,8 @@
 		</div>
 	</div>
 </section>
+
+<!------------------------------------------------footer content/Bootstrap--------------------------------------------------->
 
 					<!-------------------------------------------------------Script Tags------------------------------------------------------------------>
 					<script

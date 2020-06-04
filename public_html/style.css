@@ -1,3 +1,6 @@
+/**********************************
+
+*********************************** */
 body {
     background-image: url("");
     background-repeat: no-repeat;
@@ -8,29 +11,26 @@ body {
     font-size: 3.25rem;
     font-family: sans-serif;
 }
-/* Links inside the navbar */
-.navbar {
-    overflow: hidden;
-    background-color: dodgerblue;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 100;
+button.btn.btn.my-2.my-sm-0 {
+    border: solid;
+    color: teal;
 }
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+/**********************************
+carousel section
+*********************************** */
+section.medicare-Basics.mb-5.mt-5.pb-5 {
+    background-color: rgba(0,0,0,0.75);
 }
-.navbar a:hover {
-    background: #ddd;
-    color: dodgerblue;
+/**********************************
+About Me and contact form sections
+*********************************** */
+.row {
+    background-color: teal;
+    color: yellow;
 }
-/* Main content */
-.main {
-    margin-top: 100px; /* Add a top margin to avoid content overlay */
+/**********************************
+Medicare and You section
+*********************************** */
+.card-body {
+    padding: 1.25px;
 }
