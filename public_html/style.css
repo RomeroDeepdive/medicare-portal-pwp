@@ -8,8 +8,9 @@ body {
 }
 
 .h5, h5 {
-    font-size: 3.25rem;
+    font-size: 4.25rem;
     font-family: sans-serif;
+    text-align-last: center;
 }
 button.btn.btn.my-2.my-sm-0 {
     border: solid;
@@ -20,13 +21,15 @@ carousel section
 *********************************** */
 section.medicare-Basics.mb-5.mt-5.pb-5 {
     background-color: rgba(0,0,0,0.75);
+    padding-top: 40px;
 }
 /**********************************
 About Me and contact form sections
 *********************************** */
-.row {
+body > section.About-Me.mb-5.mt-5.pb-5 > div > div {
     background-color: teal;
     color: yellow;
+    font-size: x-large;
 }
 /**********************************
 Medicare and You section
@@ -36,5 +39,11 @@ Medicare and You section
 }
 
 body > section.medicare-Basics.mb-5.mt-5.pb-5 > div {
-    text-align: -webkit-center
+    text-align: -webkit-center;
+}
+
+.h2, h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-style: oblique;
 }

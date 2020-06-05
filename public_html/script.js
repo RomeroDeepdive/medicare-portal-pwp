@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$("#contact-form").validate({
+	$("#contact").validate({
 		debug: true,
 		errorClass: "alert alert-danger",
 		errorLabelContainer: "#output-area",
