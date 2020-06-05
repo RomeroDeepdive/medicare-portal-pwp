@@ -15,6 +15,9 @@ $(document).ready(function() {
 				email: true,
 				required: true
 			},
+			phone: {
+				required: true,
+			},
 			message: {
 				required: true,
 				maxlength: 2000
@@ -30,6 +33,9 @@ $(document).ready(function() {
 				required: "Email is a requird field",
 				email: "Invalid Email"
 			},
+				phone: {
+						required: true
+			},
 			message: {
 				required: "message is required",
 				maxlength: "You have exceeded the number of characters allowed"
@@ -39,7 +45,7 @@ $(document).ready(function() {
 		submitHandler: function (form) {
 			$("#contact").ajaxSubmit({
 				type: "POST",
-				url: $("contact").attr("action"),
+				url: $("#contact").attr("action"),
 				success: function (ajaxOutput) {
 					$("#output-area").css("display", "")
 					$("#output-area").html(ajaxOutput)
@@ -53,5 +59,5 @@ $(document).ready(function() {
 			})
 
 		}
-	})
-})
+	});
+});
