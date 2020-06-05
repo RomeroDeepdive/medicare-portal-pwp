@@ -1,11 +1,6 @@
 /**********************************
 
 *********************************** */
-body {
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .h5, h5 {
     font-size: 4.25rem;
@@ -15,6 +10,13 @@ body {
 button.btn.btn.my-2.my-sm-0 {
     border: solid;
     color: teal;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-size: x-large;
+    font-style: oblique;
+    color: rgb(19, 118, 116);
+    text-decoration: overline;
 }
 /**********************************
 carousel section
@@ -46,4 +48,13 @@ body > section.medicare-Basics.mb-5.mt-5.pb-5 > div {
     font-size: 4rem;
     text-align: center;
     font-style: oblique;
+}
+
+/**********************************
+          Contact Form Section
+*********************************** */
+#contact-form   {
+    background-image: url("bluewood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
