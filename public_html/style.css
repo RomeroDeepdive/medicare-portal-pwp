@@ -31,8 +31,16 @@ About Me and contact form sections
 body > section.About-Me.mb-5.mt-5.pb-5 > div > div {
     background-color: teal;
     color: yellow;
-    font-size: x-large;
+    font-size: medium;
 }
+/**********************************
+Medicare Basics
+*********************************** */
+
+h5#PrescriptionDrugCoverage {
+    color: teal;
+}
+
 /**********************************
 Medicare and You section
 *********************************** */
