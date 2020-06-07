@@ -1,15 +1,14 @@
-require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
 const mailgun = require('mailgun-js')
 const bodyParser =require('body-parser')
 const{check, validationResult} = require('express-validator')
-//const Recaptcha = require('express-recaptcha').RecaptchaV2
+const Recaptcha = require('express-recaptcha').RecaptchaV2
 const app = express()
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
-//const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
+const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 const indexRoute = express.Router()
 const requestValidation = [
 	check ('name', "A name is required to send an email").not().isEmpty().trim().escape(),
@@ -19,12 +18,12 @@ const requestValidation = [
 indexRoute.route('/apis')
 	.get((request,response) => {
 		return response.json({status:200})
-	}).post(/**recaptcha.middleware.verify, **/requestValidation, (request, response) => {
+	}).post(recaptcha.middleware.verify, requestValidation, (request, response) => {
 	response.append('Access-Control-Allow-Origin', ['*'])
 	response.append('Content-Type', 'text/html')
-/**if (request.recaptcha.error) {
+	if (request.recaptcha.error) {
 		return response.send(`<div class='alert alert-danger' role='alert'><strong>Try Again!</strong>There was an error with Recaptcha</div>`)
-	}**/
+	}
 	const errors = validationResult(request)
 	if (!errors.isEmpty()) {
 		const currentError = errors.array()[0]
