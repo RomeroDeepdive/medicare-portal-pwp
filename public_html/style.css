@@ -22,7 +22,7 @@ button.btn.btn.my-2.my-sm-0 {
 carousel section
 *********************************** */
 section.medicare-Basics.mb-5.mt-5.pb-5 {
-    background-color: rgba(0,0,0,0.75);
+    background-color: lightslategrey;
     padding-top: 40px;
 }
 /**********************************
@@ -30,8 +30,14 @@ About Me and contact form sections
 *********************************** */
 body > section.About-Me.mb-5.mt-5.pb-5 > div > div {
     background-color: teal;
-    color: yellow;
+    color: ghostwhite;
     font-size: medium;
+}
+p {
+    font-size: x-large;
+}
+p.card-text {
+    font-size: x-large;
 }
 /**********************************
 Medicare Basics
@@ -65,4 +71,22 @@ body > section.medicare-Basics.mb-5.mt-5.pb-5 > div {
     background-image: url("bluewood.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+/*Images*/
+
+.navbar img {
+padding-right: 50px;
+}
+.About-Me img {
+    padding-right: 10px;
+    max-height: 550px;
+    max-width: auto;
+    margin: 10px;
+}
+.medicare-Basics img {
+
+}
+
+.medicare img {
+
 }
