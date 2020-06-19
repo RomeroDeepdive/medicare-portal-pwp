@@ -22,7 +22,7 @@ button.btn.btn.my-2.my-sm-0 {
 carousel section
 *********************************** */
 section.medicare-Basics.mb-5.mt-5.pb-5 {
-    background-color: lightslategrey;
+    background-color: lightgrey;
     padding-top: 40px;
 }
 /**********************************
@@ -42,10 +42,10 @@ p.card-text {
 /**********************************
 Medicare Basics
 *********************************** */
-
-h5#PrescriptionDrugCoverage {
-    color: teal;
+h5#drugCoverage {
+    color: slategray;
 }
+
 
 /**********************************
 Medicare and You section
@@ -58,12 +58,20 @@ body > section.medicare-Basics.mb-5.mt-5.pb-5 > div {
     text-align: -webkit-center;
 }
 
-.h2, h2 {
+h2#medicareOptions {
     font-size: 4rem;
     text-align: center;
     font-style: oblique;
+    color: slategray;
+    font-family: Bahnschrift;
 }
-
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-style: oblique;
+    color: slategray;
+    font-family: Bahnschrift;
+}
 /**********************************
           Contact Form Section
 *********************************** */
@@ -72,6 +80,10 @@ body > section.medicare-Basics.mb-5.mt-5.pb-5 > div {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h2#contactForm {
+    font-size: 4rem;
+}
+
 /*Images*/
 
 .navbar img {
@@ -80,7 +92,6 @@ padding-right: 50px;
 .About-Me img {
     padding-right: 10px;
     max-height: 550px;
-    max-width: auto;
     margin: 10px;
 }
 .medicare-Basics img {
