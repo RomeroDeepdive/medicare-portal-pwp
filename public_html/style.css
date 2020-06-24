@@ -1,7 +1,6 @@
 /**********************************
 
 *********************************** */
-
 .h5, h5 {
     font-size: 4.25rem;
     font-family: sans-serif;
@@ -34,16 +33,20 @@ body > section.About-Me.mb-5.mt-5.pb-5 > div > div {
     font-size: medium;
 }
 p {
-    font-size: x-large;
+    font-size: unset;
 }
 p.card-text {
-    font-size: x-large;
+    font-size: large;
+    font-weight: bolder;
 }
 /**********************************
 Medicare Basics
 *********************************** */
-h5#drugCoverage {
-    color: slategray;
+h5#carousel {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: teal;
+    border: solid;
 }
 
 
@@ -94,10 +97,4 @@ padding-right: 50px;
     max-height: 550px;
     margin: 10px;
 }
-.medicare-Basics img {
 
-}
-
-.medicare img {
-
-}
